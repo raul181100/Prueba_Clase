@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_eliminarPais"
+        android:title="Eliminar Pais"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_CrearDb"
+        android:title="CrearBd"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/action_Inicio"
+        android:title="Inicio"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_save"
+        android:title="Guardar"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/guardar"
+        />
+
+
+
+</menu>

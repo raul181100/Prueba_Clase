@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/fondo">
+
+    <Button
+        android:id="@+id/botonCambio"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="500dp"
+        android:layout_marginTop="-15dp"
+        android:text="Lista" />
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Contenido colapsable aquí -->
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_1"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                android:title="@string/mi_toolbar"/>
+
+            <ImageButton
+                android:id="@+id/home_inicio1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="start"
+                android:src="@drawable/inicio"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/cabeceraAct1"
+        android:layout_width="273dp"
+        android:layout_height="217dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/browoodregular"
+        android:gravity="center"
+        android:text="Revisar lista de paises"
+        android:textColor="@color/white"
+        android:textSize="100px" />
+
+    <ImageView
+        android:id="@+id/imagen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/botonCambio"
+        android:layout_alignRight="@+id/botonCambio"
+        android:layout_alignBottom="@+id/botonCambio"
+        android:layout_marginEnd="-603dp"
+        android:layout_marginRight="-603dp"
+        android:layout_marginBottom="-1190dp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="244dp"
+        android:layout_height="186dp"
+        android:layout_below="@+id/botonCambio"
+        android:layout_marginLeft="83dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/browoodregular"
+        android:gravity="center"
+        android:text="Añadir nuevos paises"
+        android:textColor="@color/white"
+        android:textSize="100px" />
+
+    <Button
+        android:id="@+id/BotonAdd"
+        android:layout_width="106dp"
+        android:layout_height="101dp"
+        android:layout_below="@+id/textView2"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="40dp"
+        android:text="Añadir" />
+
+</RelativeLayout>
+
